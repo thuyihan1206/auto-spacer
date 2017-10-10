@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small handy tool for auto spacing code">
+    <meta name="keywords" content="auto-spacer code formatting">
+    <title>auto-spacer</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Nav tabs -->
+<nav class="navbar navbar-default" id="top">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand" id="brand-name">auto-spacer</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Tab panes -->
+<div class="container">
+    <!-- Home -->
+    <div class="row">
+        <div id="title">
+            <div class="col-xs-12">
+                A small handy tool for auto spacing code, based on the community
+                <a href="https://github.com/bbatsov/ruby-style-guide" target="_blank">Ruby Style Guide</a>.
+            </div>
+        </div>
+        <br />
+
+        <div id="editor">
+            <div class="col-xs-12 col-md-5">
+                <textarea id="original-text"
+                          placeholder="Paste your code here..."></textarea>
+            </div>
+
+            <div class="col-xs-12 col-md-2">
+                <button id="change-btn" class="btn btn-primary">Change code!</button>
+            </div>
+
+            <div class="col-xs-12 col-md-5">
+                <textarea id="changed-text" disabled
+                          placeholder="New code will show here after you click on 'Change Code!'..."></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="up-button">
+        <a>
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div>
+        <span>Evan Chan, 2017</span>
+        |
+        <span>
+            <a href="https://github.com/thuyihan1206" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+        </span>
+        <span>
+            <a href="https://www.linkedin.com/in/evan-chan-8a028a14" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+        </span>
+    </div>
+</footer>
+
+<!-- js -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-history-tabs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

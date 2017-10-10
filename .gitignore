@@ -1,0 +1,5 @@
+# Ignore .idea folder (RubyMine project specific settings)
+.idea
+
+# Ignore .DS_Store
+.DS_Store
