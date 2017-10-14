@@ -27,6 +27,7 @@ a {
 #title > div,
 #editor > div {
     margin-bottom: 10px;
+    position: relative;
 }
 
 @media (min-width: 992px) {
@@ -88,6 +89,13 @@ footer > div {
 
 footer span {
     margin: 0 5px 0;
+}
+
+#copy-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    display: none;
 }
 
 .up-button {

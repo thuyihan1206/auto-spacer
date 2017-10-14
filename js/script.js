@@ -18,7 +18,29 @@ $(function () {
 
     $('#change-btn').on('click', function() {
         var text = $('#original-text').val();
-        $('#changed-text').val(autoSpace(text));
+        var $changedTextArea = $('#changed-text');
+        var $copyBtn = $('#copy-btn');
+
+        $changedTextArea.val(autoSpace(text));
+
+        if ($changedTextArea.val()) {
+            $copyBtn.text('Copy Code');
+            $copyBtn.show();
+        } else {
+            $copyBtn.hide();
+        }
+    });
+
+    $('#copy-btn').on('click', function() {
+        $('#changed-text').select();
+
+        try {
+            if (document.execCommand('copy')) {
+                $('#copy-btn').text('Copied!');
+            }
+        } catch (err) {
+            alert('Error: Unable to copy');
+        }
     });
 
 });
