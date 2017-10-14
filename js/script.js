@@ -64,7 +64,7 @@ function autoSpace(text) {
         text = text.replace(regExp, val.slice(-1) + ' ');
     });
 
-    var otherOps = ['\\.', '!', '~'];
+    var otherOps = ['\\.', '!', '~', ':'];
 
     ops = ['\\+', '\\-', '\\*', '\\/', '\\', '&', '\\|', '\\^', '<', '>', '='];
     $.each(ops, function(index, val) {
