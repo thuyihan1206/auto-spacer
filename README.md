@@ -11,4 +11,4 @@ It targets Ruby but would largely work for programming languages with similar se
 URL: https://thuyihan1206.github.io/auto-spacer
 
 ## Contribute
-I know it's not perfect so if you found a problem, please feel free to submit an issue or pull request. Your suuport is of utmost importance.
+I know it's not perfect so if you found a problem, please feel free to submit an issue or pull request. Your support is of utmost importance.
