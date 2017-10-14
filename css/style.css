@@ -47,6 +47,11 @@ a {
     align-items: center;
 }
 
+.sub-paragraph {
+    font-size: 0.9em;
+    color: #5e5e5e;
+}
+
 textarea {
     width: 100%;
     height: 100%;

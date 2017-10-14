@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A small handy tool for auto spacing code">
-    <meta name="keywords" content="auto-spacer code formatting">
-    <title>auto-spacer</title>
+    <meta name="description" content="A little handy online tool for auto spacing code">
+    <meta name="keywords" content="auto-spacer online code formatting">
+    <title>auto-spacer - A little handy online tool for auto spacing code</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,8 +32,12 @@
     <div class="row">
         <div id="title">
             <div class="col-xs-12">
-                A small handy tool for auto spacing code, based on the community
+                A little handy online tool for auto spacing code, partially based on the community
                 <a href="https://github.com/bbatsov/ruby-style-guide" target="_blank">Ruby Style Guide</a>.
+            </div>
+            <div class="col-xs-12 sub-paragraph">
+                For example, it automatically adds or removes spaces around operators, punctuations,
+                and parentheses/brackets. It targets Ruby but would largely work for programming languages with similar set of operators.
             </div>
         </div>
         <br />
@@ -45,17 +49,18 @@
             </div>
 
             <div class="col-xs-12 col-md-2">
-                <button id="change-btn" class="btn btn-primary">Change code!</button>
+                <button id="change-btn" class="btn btn-primary">Format!</button>
             </div>
 
             <div class="col-xs-12 col-md-5">
                 <textarea id="changed-text" disabled
-                          placeholder="New code will show here after you click on 'Change Code!'..."></textarea>
+                          placeholder="New code will show here after you click on 'Format!'..."></textarea>
             </div>
         </div>
 
     </div>
 
+    <!-- Scroll up button -->
     <div class="up-button">
         <a>
             <span class="glyphicon glyphicon-chevron-up"></span>
@@ -66,7 +71,9 @@
 <!-- Footer -->
 <footer>
     <div>
-        <span>Evan Chan, 2017</span>
+        <span>Found a problem? Please submit an issue or pull request to the
+            <a href="https://github.com/thuyihan1206/auto-spacer" target="_blank">auto-spacer repo</a>.
+        </span>
         |
         <span>
             <a href="https://github.com/thuyihan1206" target="_blank"><i class="fa fa-github fa-lg"></i></a>
