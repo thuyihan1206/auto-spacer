@@ -1,6 +1,5 @@
 # auto-spacer
 
-## Introduction
 A little handy online tool for auto spacing code, partially based on the community [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
 
 For example, it automatically adds or removes spaces around operators, punctuations, and parentheses/brackets.

@@ -12,10 +12,6 @@ body {
     margin: 0 0 50px;
 }
 
-nav {
-    text-transform: uppercase;
-}
-
 a {
     cursor: pointer;
 }
