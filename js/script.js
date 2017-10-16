@@ -83,7 +83,9 @@ function autoSpace(text) {
         }
     }
     $.each(doubleOps, function(index, val) {
-        if (val[0] === '\\.' && val[1] === '\\.') {
+        if ((val[0] === '\\.' && val[1] === '\\.') ||
+            (val[0] === '\\:' && val[1] === '\\:') ||
+            (val[0] === '\\!' && val[1] === '\\!')) {
             return;
         }
         var regExp = new RegExp(space + val[0] + space + val[1] + space, 'g');
