@@ -64,9 +64,9 @@ function autoSpace(text) {
         text = text.replace(regExp, val.slice(-1) + ' ');
     });
 
-    var otherOps = ['\\.', '!', '~', ':'];
+    var otherOps = ['\\.', '!', '~', ':', '\\-']; // ignore '-' for now
 
-    ops = ['\\+', '\\-', '\\*', '\\/', '\\', '&', '\\|', '\\^', '<', '>', '='];
+    ops = ['\\+', '\\*', '\\/', '\\', '&', '\\|', '\\^', '<', '>', '='];
     $.each(ops, function(index, val) {
         var regExp = new RegExp(space + val + space, 'g');
         text = text.replace(regExp, ' ' + val.slice(-1) + ' ');
@@ -84,8 +84,8 @@ function autoSpace(text) {
     }
     $.each(doubleOps, function(index, val) {
         if ((val[0] === '\\.' && val[1] === '\\.') ||
-            (val[0] === '\\:' && val[1] === '\\:') ||
-            (val[0] === '\\!' && val[1] === '\\!')) {
+            (val[0] === ':' && val[1] === ':') ||
+            (val[0] === '!' && val[1] === '!')) {
             return;
         }
         var regExp = new RegExp(space + val[0] + space + val[1] + space, 'g');
@@ -110,6 +110,12 @@ function autoSpace(text) {
     $.each(ops, function(index, val) {
         var regExp = new RegExp(space + val[0] + space + val[1] + space + val[2] + space, 'g');
         text = text.replace(regExp, ' '+ val[0].slice(-1) + val[1].slice(-1) + val[2].slice(-1) + ' ');
+    });
+
+    noSpaceOps = [[':', '\\/', '\\/']];
+    $.each(noSpaceOps, function(index, val) {
+        var regExp = new RegExp(space + val[0] + space + val[1] + space + val[2] + space, 'g');
+        text = text.replace(regExp, val[0].slice(-1) + val[1].slice(-1) + val[2].slice(-1));
     });
 
     // special case: rational literals
